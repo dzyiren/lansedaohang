@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蓝色导航最新地址-永久地址发布页</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            overflow-x: hidden;
+        }
+
+        /* 背景容器 */
+        .background-container {
+            position: relative;
+            width: 100%;
+            height: 30vh; /* 背景图片显示的高度比例 */
+            background: url('背景图片路径.jpg') center / cover no-repeat;
+        }
+
+        /* 渐变过渡效果 */
+        .background-container::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #f5f5f5);
+        }
+
+        /* 公告区 */
+        .announcement {
+            background-color: #ffe9a6;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            position: relative;
+            z-index: 1; /* 确保公告在图片之上 */
+        }
+
+        /* 广告横幅 */
+        .ad-banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            background-color: #fff;
+            margin: 20px 0;
+        }
+
+        .ad-banner img {
+            height: 100%;
+            width: auto;
+            cursor: pointer;
+        }
+
+        /* 板块标题 */
+        .section-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .section-title a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        .section-title a:hover {
+            color: #007bff;
+        }
+
+        /* 内容展示区 - 文字框样式 */
+        .text-section {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 10px;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .text-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            background-color: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .text-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .text-item a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+
+        /* APP展示区 - 图片展示样式 */
+        .app-section {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 10px;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .app-item {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #fafafa;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .app-item img {
+            max-width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        .app-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .app-item a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        /* 媒体查询 - 移动端布局调整 */
+        @media screen and (max-width: 768px) {
+            .background-container {
+                height: 30vh; /* 移动端也保持背景图片显示30%的比例 */
+                background-size: cover;
+            }
+
+            .text-section {
+                grid-template-columns: repeat(4, 1fr); /* 每行4个 */
+            }
+
+            .app-section {
+                grid-template-columns: repeat(5, 1fr); /* 每行5个 */
+            }
+        }
+
+        /* 底部信息栏 */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #fafafa;
+            font-size: 14px;
+            color: #999;
+        }
+
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 背景容器 -->
+    <div class="background-container"></div>
+
+    <!-- 公告区 -->
+    <div class="announcement" style="margin-top: 10vh;"> <!-- 可以通过修改 margin-top 调整公告与顶部的距离 -->
+        公告：欢迎访问本站，doufuru.vip 精彩内容马上呈现！
+    </div>
+
+    <!-- 广告展示 -->
+    <div class="ad-banner">
+        <a href="https://你的广告链接.com" target="_blank">
+            <img src="广告图片路径.jpg" alt="广告">
+        </a>
+    </div>
+
+    <!-- 板块标题：视频专区 -->
+    <div class="section-title">
+        <a href="#video-section">视频专区</a>
+    </div>
+
+    <!-- 视频专区展示区（文字框） -->
+    <div id="video-section" class="text-section">
+        <div class="text-item">
+            <a href="https://doufuru.vip" target="_blank">视频1</a>
+        </div>
+        <div class="text-item">
+            <a href="https://doufuru666.com" target="_blank">视频2</a>
+        </div>
+        <!-- 继续添加其他文字项目，一行8个 -->
+        <!-- ... -->
+    </div>
+
+    <!-- 板块标题：小说专区 -->
+    <div class="section-title">
+        <a href="#novel-section">小说专区</a>
+    </div>
+
+    <!-- 小说专区展示区（文字框） -->
+    <div id="novel-section" class="text-section">
+        <div class="text-item">
+            <a href="https://doufuru666.com" target="_blank">小说1</a>
+        </div>
+        <div class="text-item">
+            <a href="https://doufuru666.com" target="_blank">小说2</a>
+        </div>
+        <!-- 继续添加其他文字项目，一行8个 -->
+        <!-- ... -->
+    </div>
+
+    <!-- 板块标题：工具专区 -->
+    <div class="section-title">
+        <a href="#tools-section">工具专区</a>
+    </div>
+
+    <!-- 工具专区展示区（APP图片展示） -->
+    <div id="tools-section" class="app-section">
+        <div class="app-item">
+            <a href="https://doufuru666.com" target="_blank">
+                <img src="工具图片路径1.jpg" alt="工具1">
+                <span>工具1</span>
+            </a>
+        </div>
+        <div class="app-item">
+            <a href="https://doufuru666.com" target="_blank">
+                <img src="工具图片路径2.jpg" alt="工具2">
+                <span>工具2</span>
+            </a>
+        </div>
+        <!-- 继续添加其他APP项目，一行10个 -->
+        <!-- ... -->
+    </div>
+
+    <!-- 底部信息栏 -->
+    <div class="footer">
+        <p>本站内容由 <a href="https://dizhidaquan.com">站点名称</a> 提供，感谢您的访问！</p>
+    </div>
+
+</body>
+</html>
